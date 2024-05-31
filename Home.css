@@ -1,0 +1,538 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #354E62; 
+    padding-top: 0%;
+    overflow-x: hidden;
+}
+
+.header-nav-container {
+    font-size: 2vw;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    background-image: url('Images/background2.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 26vh;
+    z-index: 1000;
+}
+
+#title {
+    font-size: 2vw;
+}
+header {
+    position: relative;
+    top: 5%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center; 
+    color: #fff; 
+}
+
+ nav {
+    position: fixed;
+    top: 17.5%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px; 
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+nav ul li a {
+    color: black; 
+    text-decoration: none;
+    font-size: 1.8vw; 
+}
+
+.black-nav {
+    color: #354E62;
+    margin-top: 2%;
+    text-align: center; 
+    color: #fff; 
+}
+
+nav ul li a:hover {
+    color: #6492b8; 
+}
+
+/* Keep the original styles for larger screens */
+
+/* Styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .header-nav-container {
+        font-size: 3vw; /* Adjust font size for header container */
+        height: auto; /* Adjust height to accommodate content */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    #title {
+        font-size: 3vw; /* Adjust font size for title */
+    }
+
+    header {
+        position: relative; /* Make the header a positioning context */
+        height: 100px; /* Example height, adjust as needed */
+    }
+    
+    nav {
+        position: absolute; /* Position the navigation relative to the header */
+        top: 70%; /* Position it vertically centered within the header */
+        transform: translateY(-50%);
+        left: 50%; /* Position it horizontally centered within the header */
+        transform: translateX(-50%);
+        width: 90%; /* Set a width percentage to make it responsive */
+        max-width: 1200px; /* Set a maximum width to prevent it from becoming too wide on large screens */
+        z-index: 1000;
+        bottom: 5%; /* Adjusted bottom position for smaller screens */
+    }
+    
+    /* Adjust other styles as needed */
+    
+
+    nav ul li {
+        margin-right: 20px; /* Adjust margin for navigation items */
+    }
+
+    nav ul li a {
+        font-size: 2vw; /* Adjust font size for navigation links */
+    }
+}
+
+#welcome {
+    position: relative; 
+    height: 55vh; 
+    background-image: url('Images/Cloud.png');
+    background-size: 60vw;
+    background-position: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 35vh;
+    background-repeat: repeat-x;
+}
+
+#welcome h1 {
+    font-size: 3vw;
+    color: #354e62; 
+    text-shadow: 2px 2px 4px rgba#162029;
+    margin-bottom: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    #welcome h1 {
+        font-size: 8vw;
+    }
+}
+
+#welcome p {
+    font-size: 1.5vw;
+    color: #354E62; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 2vw; 
+    max-width: 60vw;
+    text-align: center;
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    #welcome p {
+        font-size: 3vw;
+    }
+}
+
+#about {
+    padding-top: 5%;
+    padding-bottom: 0;
+}
+
+.about-me-container {
+    background-color: #ffffff; 
+    padding: 5%;
+    margin-top: 20px; 
+    display: flex;
+    align-items: center;
+}
+
+.aboutMe h3 {
+    position: relative;
+    text-align: left;
+    font-size: 2vw;
+    color: #354E62; 
+    padding-top: 10%;
+    margin-bottom: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    .aboutMe h3 {
+        font-size: 5vw;
+    }
+}
+
+.aboutMe p {
+    font-size: 1.5vw;
+    color: #354E62;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0vw; 
+    width: 59vw; 
+    text-align: left;
+    border-radius: 5%;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .aboutMe p {
+        font-size: 3vw;
+    }
+}
+
+.profile-image {
+    width: 300px; /* Maintain width for typical screen view */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    border-radius: 50%; /* Rounded corners for circular shape */
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensure the image behaves as a block element */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    .profile-image {
+        width: 100px; /* Adjust width for smaller screens */
+        margin-bottom: 10px; /* Add space below the image */
+    }
+}
+
+
+#portfolio {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+#portfolio h1 {
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 20px;
+    padding-top: 20%;
+}
+
+#portfolio ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 3%;
+}
+
+#portfolio li {
+    margin-bottom: 10px;
+}
+
+#portfolio li a {
+    text-decoration: none;
+    color: #354E62;
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #c6d0d8;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1.5vw;
+}
+
+#portfolio li a:hover {
+    background-color: #aec9db;
+}
+
+#skills {
+    background-color: #cce5ef; 
+    padding: 1% 20% 2%; 
+}
+
+#skills .container {
+    text-align: center; 
+    margin-top: 5%;
+}
+
+#skills h2 {
+    font-size: 2vw;
+    color: #6492b8; 
+    margin-bottom: 20px; 
+}
+
+#skills p {
+    font-size: 1.5vw;
+}
+
+#skills ul {
+    font-size: 3vw;
+}
+
+#skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;   
+}
+
+#skill-list li {
+    display: none; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+#services {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#services-header {
+    text-align: center;
+    padding-top: 10%;
+}
+
+#services h1 {
+    color: #354e62;
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+
+#price-list-header {
+    color: #354e62;
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 0;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#services li {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.content h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 2vw;
+}
+
+.content p {
+    margin: 0;
+    font-size: 1.3vw;
+    flex-grow: 1;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.content h3 {
+    margin: 0;
+    flex-grow: 1;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.price {
+    color: #354e62;
+    font-weight: bold;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+}
+
+
+#contact {
+    background-color: #c6d0d8; 
+    padding: 50px 0 100px; 
+    margin-top: 150px;
+}
+  
+.container {
+    max-width: 800px; 
+    margin: 0 auto;
+    text-align: center; 
+}
+  
+h2 {
+    font-size: 3vw;
+    margin-bottom: 5%;
+}
+  
+p {
+    font-size: 1.5vw; 
+    margin-bottom: 2%; 
+}
+
+h4 {
+    font-size: 1.5vw; 
+    margin-bottom: 2%; 
+}
+  
+form {
+    margin-top: 5%;
+    font-size: 1.5vw;
+    text-align: left;
+}
+  
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+  
+.message-box {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    resize: vertical;
+    height: 150px; 
+}
+
+input[type="email"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    resize: vertical;
+}
+
+#submit {
+    background-color: #354E62; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#reset {
+    background-color: #6492b8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#submit:hover, #reset:hover {
+    opacity: 0.8;
+}
+   
+footer {
+    background-color: #aec9db;
+    color: #fff; 
+    padding: 2%; 
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 0; 
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 4vw; /* Increase font size for h2 */
+        margin-bottom: 2%; /* Adjust margin */
+    }
+    
+    p, h4 {
+        font-size: 2.5vw; /* Increase font size for paragraphs and h4 */
+        margin-bottom: 1%; /* Adjust margin */
+        margin-left: 5px;
+        padding: 5px;
+    }
+    
+    form {
+        margin-top: 5%; /* Increase top margin for form */
+        font-size: 3vw; /* Increase font size for form elements */
+        margin-left: 5px;
+    }
+    
+    label {
+        margin-bottom: 3px; /* Adjust margin */
+    }
+    
+    .message-box {
+        width: calc(100% - 20px); /* Adjust width to fit within the container */
+        padding: 5px;
+        margin-bottom: 10px; /* Increase bottom margin for better spacing */
+        margin-left: 5px;
+    }
+    
+    input[type="email"],
+    input[type="text"],
+    textarea {
+        width: calc(100% - 20px); /* Adjust width to fit within the container */
+        padding: 5px;
+        margin-bottom: 10px; /* Increase bottom margin for better spacing */
+        margin-left: 5px;
+    }
+    
+    #submit{
+        font-size: 14px; /* Decrease font size for buttons */
+        padding: 8px 15px; /* Adjust padding */
+        margin-right: 8px; /* Adjust margin */
+    }
+
+    #reset {
+        font-size: 14px; /* Decrease font size for buttons */
+        padding: 8px 15px; /* Adjust padding */
+        margin-right: 8px; /* Adjust margin */
+    }
+    
+    footer {
+        padding: 3%; /* Adjust padding for footer */
+    }
+}

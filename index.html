@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Taylir Baum</title>
+         <link rel="stylesheet" href="Home.css">
+        
+    </head>
+    <body>
+
+        <div class="header-nav-container">
+            <header>
+                <h1>Taylir Baum </h1>
+                <h2 id="title">Website Developer</h2>
+            </header>
+
+            <nav class="black-nav">
+                <ul>
+                    <li><a href="#welcome">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <section id="welcome">
+            <h1>Hello</h1>
+            <p>Welcome to my front-end design portfolio! I'm thrilled to showcase my passion for crafting beautiful and intuitive user experiences through innovative web design. With a keen eye for detail and a commitment to pushing the boundaries of creativity, I specialize in transforming ideas into captivating digital experiences.</p>
+        </section>
+
+        <section id="about">
+            <div class="about-me-container">
+                <div class="aboutMe">
+                    <h3>A Little About Me</h3>
+                    <p>After graduating with a Bachelor of Arts in Creative Advertising in 2019, I embarked on a career path as a Quality Analyst, meticulously testing diverse software applications and programs. Seeking to broaden my skill set, I pursued further education and obtained a Website Developer Certification, immersing myself in the intricacies of HTML, CSS, and JavaScript. I am eagerly anticipating the opportunity to apply my newfound expertise to my freelance endeavors.</p>
+                    </div>
+                <img src="Images/Profileimage.jpg" alt="My Profile Picture" class="profile-image">
+            </div>
+
+            <section id="skills">
+                <div class="container">
+                    <h2>My Skills</h2>
+                    <p>Here are some of the technologies and tools I'm proficient in:</p>
+                    <ul>
+                        <li class="active"> HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Adobe Creative Suite</li>
+                        <li>Design</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+        <div class="container">
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+            <ul>
+                <li><a href= "Exercise_three.html">Checkout Cart Example</a></li>
+                <li><a href="example4.html">Discount Example</a></li>
+                <li><a href="exercise_five.html">Test Score Converter Example</a></li>
+                <li><a href='exercise_six.html'>List Example</a></li>
+                <li><a href='exercise_seven.html'>Audio Recorder Example</a></li>
+                <li><a href='exercise_eight.html'>Grocery List Example</a></li>
+                <li><a href='Form jQuery UI.html'>Contact Form Example</a></li>
+                <li><a href='HTML5 API History Object.html'>History Object Example</a></li>
+                <li><a href='Modal_Window_Photo_Viewer.html'>Picture Viewer Example</a></li>
+                <li><a href='email_list.html'>Email List Form Example</a></li>
+            </ul>
+
+        </section>
+        </div>
+
+        <section id="services">
+            <section id="services-header">
+                <h1>Services</h1>
+                <h2 id="price-list-header">Price List</h2>
+            </section>
+
+            <section id="services-list">
+                <ul>
+                    <li>
+                    <div class="image-container">
+                        <img src="Images/website.jpg" alt="Website Design Graphic">
+                    </div>
+                    <div class="content">
+                        <h2>Website Design</h2>
+                        <p>Includes a home page, three engaging landing pages tailored to your needs, and a seamless contact page to enhance user interaction.</p> 
+                        <p class="price">$1,000</p> 
+                    </div>
+                    </li>
+                    <li>
+                    <div class="image-container">
+                        <img src="Images/brand.jpg" alt="Branding Graphic">
+                    </div>
+                    <div class="content">
+                        <h2>Brand Design</h2>
+                        <p>Includes logo design, business card design, letterhead design, social media graphics, and brand style guide.</p>
+                        <p class="price">$800</p>
+                    </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="Images/print.jpg" alt="Print Graphic">
+                        </div>
+                        <div class="content">
+                            <h2>Print Design</h2>
+                            <p>Includes 3 initial concepts, unlimited revisions, source files, and print.</p>
+                            <p class="price">$500</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="image-container">
+                            <img src="Images/logo.jpg" alt="Logo Graphic">
+                        </div>
+                        <div class="content">
+                            <h2>Logo Design</h2>
+                            <p>Includes 5 initial concepts, unlimited revisions, source files, and brand guidelines.</p>
+                            <p class="price">$250</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Feel free to reach out to me with any inquiries, project proposals, or collaborations. Whether you have a question about my services or you're ready to start a new project, I'm here to help. I value clear communication and prompt responses, so don't hesitate to get in touch. I look forward to hearing from you!</p>
+                    <h4>* <Datal></Datal> Denotes required field</h4>
+                    <form id="contact-form" name="contact-form"  method="get">
+                        <label for="email">*Email Address:</label>
+                        <input type="email" id="email" name="email" required><br>
+            
+                        <label for="name">*Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+            
+                        <label for="message">*Message:</label>
+                        <textarea id="message" name="message" class="message-box" rows="4"required></textarea><br>
+            
+                        <label>&nbsp;</label>
+                        <input type="submit" id="submit" name="submit" value="Submit">
+                        <input type="reset" id="reset" name="reset" value="Reset"><br>
+                    </form>
+                
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>2024 Taylir Baum. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"></script>
+        <script src="Project.js"></script>
+        
+    </body>
+</html>
+    
